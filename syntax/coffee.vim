@@ -19,7 +19,7 @@ syntax sync fromstart
 " priority for keywords is higher than matches. This causes keywords to be
 " highlighted inside matches, even if a match says it shouldn't contain them --
 " like with coffeeAssign and coffeeDot.
-syn match coffeeStatement /\<\%(return\|break\|continue\|throw\)\>/ display
+syn match coffeeStatement /\<\%(return\|break\|continue\|throw\|yield\)\>/ display
 hi def link coffeeStatement Statement
 
 syn match coffeeRepeat /\<\%(for\|while\|until\|loop\)\>/ display
@@ -107,7 +107,7 @@ hi def link coffeeFloat Float
 
 " An error for reserved keywords, taken from the RESERVED array:
 " http://coffeescript.org/documentation/docs/lexer.html#section-67
-syn match coffeeReservedError /\<\%(case\|default\|function\|var\|void\|with\|const\|let\|enum\|export\|import\|native\|__hasProp\|__extends\|__slice\|__bind\|__indexOf\|implements\|interface\|package\|private\|protected\|public\|static\|yield\)\>/
+syn match coffeeReservedError /\<\%(case\|default\|function\|var\|void\|with\|const\|let\|enum\|export\|import\|native\|__hasProp\|__extends\|__slice\|__bind\|__indexOf\|implements\|interface\|package\|private\|protected\|public\|static\)\>/
 \                             display
 hi def link coffeeReservedError Error
 
